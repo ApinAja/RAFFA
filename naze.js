@@ -28,16 +28,16 @@ const ini_mark = `0@s.whatsapp.net`
 //TIME
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
-var ucapanWaktu = 'Selamat Malam 🌌'
+var ucapanWaktu = 'Selamat Malam 🌙'
  }
  if(time2 < "19:00:00"){
-var ucapanWaktu = 'Selamat Sore 🌃'
+var ucapanWaktu = 'Selamat Sore 🌄'
  }
  if(time2 < "18:00:00"){
 var ucapanWaktu = 'Selamat Sore 🌅'
  }
  if(time2 < "15:00:00"){
-var ucapanWaktu = 'Selamat Siang 🏙'
+var ucapanWaktu = 'Selamat Siang 🌤️'
  }
  if(time2 < "11:00:00"){
 var ucapanWaktu = 'Selamat Pagi 🌄'
@@ -1470,11 +1470,11 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-⭔ Title : ${anu.title}
+⭔ Judul : ${anu.title}
 ⭔ Ext : Search
 ⭔ ID : ${anu.videoId}
-⭔ Duration : ${anu.timestamp}
-⭔ Viewers : ${anu.views}
+⭔ Durasi : ${anu.timestamp}
+⭔ Penonton : ${anu.views}
 ⭔ Upload At : ${anu.ago}
 ⭔ Author : ${anu.author.name}
 ⭔ Channel : ${anu.author.url}
